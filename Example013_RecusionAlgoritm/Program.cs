@@ -2,7 +2,6 @@
 // Console.WriteLine("Example013_RecusionAlgoritm !!!");
 
 /* Theori ДВУМЕРНЫЙ МАССИВ
-*/
 
 /* ЗАПОМНИМ КАК ПИШЕТСЯ ДВУМЕРНЫЙ МАССИВ:
 
@@ -16,7 +15,7 @@
 // В скобках [Строки 3 либо matrix.GetLength(0), Столбцы 4 либо matrix.GetLength(1)] 
 */
 
-string[,] table = new string[2, 5];
+/*string[,] table = new string[2, 5];
 // // String.Empty - Инициализ строк происх с пом этой константы
 // // table [0, 0] table [0, 1] table [0, 2] table [0, 3] table [0, 3]
 // // table [1, 0] table [1, 1] table [1, 2] table [1, 3] table [1, 4]
@@ -66,8 +65,8 @@ PrintArray(matrix); //Снач при распечатке убедимся чт
 FillArray(matrix); //После этого сделаем FillArray в качест аргум переда наш массив (matrix)
 Console.WriteLine();
 PrintArray(matrix);// Снова распечатаем
-
-// Как представить черно-белое изображение
+*/
+/* Как представить черно-белое изображение
 
 // x-1, y-1   x-1, y   x-1, y+1
 //  x , y-1     x, y     x, y+1
@@ -141,17 +140,17 @@ void FillImage(int row, int col) // В качеств аргум возьмем 
 PrintImage(pic); 
 FillImage(13, 13);
 PrintImage(pic);
-
+*/
 
 // РЕКУРСИЯ - ЭТО ФУНКЦИЯ, КОТОРАЯ ВЫЗЫВАЕТ САМА СЕБЯ
 
-// ФАКТОРИАЛ
+/* ФАКТОРИАЛ
 // 5! = 5*4*3*2*1
 //      5*4!
 //        4*3!
 //          3*2!
 
-/* Пример Рекурсии:  ВЫЧИСЛЕНИЕ ФАКТОРИАЛА
+// Пример Рекурсии:  ВЫЧИСЛЕНИЕ ФАКТОРИАЛА
 double Factorial (int n)
 {
     // 1! = 1
@@ -159,18 +158,18 @@ double Factorial (int n)
     if(n == 1) return 1;
     else return n * Factorial(n-1); // Factorial(n-1) - Факториал предыдущего числа
 }
-for (int i = 1; i<40; i++)
+for (int i = 1; i<15; i++)
 {
-    Console.WriteLine($"{i}! = {Factorial(i)}"); 
+     Console.WriteLine($"{i}! = {Factorial(i)}"); 
 }
 */
 
-// Пример Рекурсии ВЫЧИСЛЕНИЕ ЧИСЕЛ ФИБОНАЧИ
+/* Пример Рекурсии ВЫЧИСЛЕНИЕ ЧИСЕЛ ФИБОНАЧИ
 
 // f(1) = 1
 // f(2) = 1
 // f(n) = f(n-1) + f(n-2)
-/* int Fibonacci (int n)  возвращается  integer-значение
+ double Fibonacci (int n) // возвращается  integer-значение
 {
     if(n==1 || n == 2) return 1;
     else return Fibonacci (n - 1) + Fibonacci (n - 2);
@@ -201,5 +200,3 @@ for (int i = 1; i < 50; i++)
 * МАССИВОВ МНОГО НЕ БЫВАЕТ
 * УГЛУБЛЕНИЕ В МЕТОДЫ И ПРАКТИЧЕСКАЯ РЕКУРСИЯ
 */
-
-
