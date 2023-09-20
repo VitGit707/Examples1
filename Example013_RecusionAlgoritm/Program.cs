@@ -1,4 +1,4 @@
-﻿// Example013_RecusionAlgoritm !!!
+﻿ // Example013_RecusionAlgoritm РЕКУРСИЯ!!!
 // Console.WriteLine("Example013_RecusionAlgoritm !!!");
 
 /* Theori ДВУМЕРНЫЙ МАССИВ
@@ -199,4 +199,35 @@ for (int i = 1; i < 50; i++)
 * ЦИКЛОВ МНОГО НЕ БЫВАЕТ И ДВУМЕРНЫЕ МАССИВЫ ТОМУ ПОДТВЕРЖДЕНИЕ
 * МАССИВОВ МНОГО НЕ БЫВАЕТ
 * УГЛУБЛЕНИЕ В МЕТОДЫ И ПРАКТИЧЕСКАЯ РЕКУРСИЯ
+*/
+
+// Урок 7. Дополнительная лекция. Рекурсия продолжение
+/* Игра в пирамидки
+// Решаем с помощью рекурсии
+
+void Towers(string with = "1", string on = "3", string some = "2", int count = 4)
+{
+    if (count > 1) Towers(with, some, on, count - 1);
+    Console.WriteLine($"{with} >> {on}");
+    if (count > 1) Towers(some, on, with, count - 1);
+}
+Towers();
+*/
+
+/* Задача 2 Обход разных структур
+string emp = String.Empty;
+string[] tree = { emp, "/", "*", "10", "-", "+", emp, emp, "4", "2", "1", "3" };
+//                0    1    2     3    4    5    6    7    8    9    10   11  
+void InOrderTraversal(int pos = 1)
+{
+    if (pos <tree.Length)
+    {
+        int left = 2 * pos;
+        int right = 2 * pos +1;
+        if (left < tree.Length && !String.IsNullOrEmpty(tree[left])) InOrderTraversal(left);
+        Console.WriteLine(tree[pos]);
+        if (right < tree.Length && !String.IsNullOrEmpty(tree[left])) InOrderTraversal(right);
+    }
+}
+InOrderTraversal();
 */
